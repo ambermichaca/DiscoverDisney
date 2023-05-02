@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'home.js') }}"></script>
+
+<!--This script tag reads in variables from the server so that we can access them in the js-->
+<script>
+    let rides = {{rides|tojson}} 
+</script>
+
+    <div class = "home-container">
+        <header> <!--added header-->
+            <div class="row">
+                <h1 class="blue-box">ExploreDisney:</h1>
+            </div>
+            <br>
+            <div class="row">
+                <h2 class="blue-box">Accessibility Browser Extension Instructions:</h1>
+                    <ol type="1">
+                        <li>To activate speech, please press the “1” key. To turn off speech, press the “0” key. While speech is activated, hover over any text or image to hear the content read out loud.</li>
+                        <li>To magnify text or images, hover over the element and press “Tab”.</li>
+                        <li>NOTE: Speech and magnifier cannot be used at the same time. </li>
+                     </ol>
+            </div>
+            <br>
+            <div class = "row">
+                <div class = "welcome">
+                    <h2 class="darkblue">Introduction</h2>
+                    <p>Welcome to our magical website, where the impossible becomes possible! We may not have a genie to grant your wishes, but we have something even better - the power to make your Disney World experience more inclusive and equitable. Our website is like a trusty sidekick that guides you through the ins and outs of all the attractions, rides, and shows at Disney World. We believe that everyone, no matter their unique abilities, should have the freedom to choose which attractions they want to experience, and that's where we come in. So, come join us on a journey of enchantment and adventure as we unlock the secrets of Disney World, one ride at a time.
+                    </p>
+                </div>      
+            </div>
+        </header>
+        <br><br><br><br>
+        <div role="main">
+            <div class = "header row">
+                <div class = "highlights col-md-6">
+                    <h2 class = "blue-box">Magic Kingdom Attractions: </h2>
+                </div> 
+            </div>
+            <br>
+            <div id = "ride-div" class = "card-deck row">
+            </div>
+        </div>
+        <!--inside the JS file, dynamically create divs with the link that will dispaly a single ride-->
+        <br>
+
+    </div>
+
+
+{% endblock %}

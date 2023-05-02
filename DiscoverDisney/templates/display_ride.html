@@ -1,0 +1,66 @@
+<!--takes 1 ride and displays it. this is directly connected to the server.py -->
+
+{% extends "layout.html" %} {% block content %}
+
+<div id="container">
+  <div role="main">
+    <!--added main header-->
+    <h1 style="color: #113ccf">Ride Overview</h1>
+    <br />
+    <div class="title serif row blue-box">{{ride.title}}</div>
+    <br />
+    <div class="row">
+      <img class="image" src="{{ride.image}}" alt="{{ride.alt_text}}" />
+    </div>
+    <br />
+    <div class="row description serif blue-box">
+      <h2 class="hiddenheading" style="font-weight: bold">Ride Description:</h2>
+      {{ride.description}}
+    </div>
+    <br />
+    <div class="row">
+      <iframe
+        class="iframe-video"
+        width="800"
+        height="555"
+        src="{{ride.video}}"
+        title="{{ride.alt_video_text}}"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+        gyroscope; picture-in-picture"
+        allowfullscreen
+      >
+        <track
+          kind="captions"
+          src="{{ride.captions}}"
+          srclang="en"
+          label="English"
+          default
+        />
+      </iframe>
+    </div>
+    <div class="row blue-box">
+      <h2 class="hiddenheading" style="font-weight: bold">
+        Safety and Accesibility:
+      </h2>
+      <br />
+      <ul>
+        {% for item in ride.accesibility %}
+        <li>{{item}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <br />
+
+    <div class="row serif blue-box">
+      <h2 class="hiddenheading" style="font-weight: bold">Location:</h2>
+      <ul>
+        <li>{{ride.neighborhood}}</li>
+      </ul>
+    </div>
+
+    <br />
+  </div>
+
+  {% endblock %}
+</div>

@@ -1,0 +1,166 @@
+
+.container{
+    width: 100%;
+    margin:auto;
+    margin-top:30px;
+}
+
+#container{
+    width: 100%;
+    margin:auto;
+    margin-top:30px;
+}
+
+.options{
+    font-family: Serif;
+    color: gray;  
+}
+.header{
+    font-size:25px;
+    font-weight: bold;
+}
+
+.padding{
+    padding-left: 20px;
+}
+
+.image{
+    width:800px;
+    margin:auto;
+}
+.address{
+    color: lightgrey;
+    
+}
+.iframe-video{
+    margin: auto;
+}
+.title{
+    font-size: 25px;
+    font-weight: bold;
+    margin:auto; 
+    text-align: center;
+}
+.red{
+    color: rgb(143, 0, 0);
+}
+
+.darkblue{
+    color: #113CCF;
+}
+
+.border{
+    border: grey solid 1px;
+    height: 290px;
+    background-color: lightgrey;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.picturePadding{
+    padding-top: 10px;
+}
+#name-box{
+    width:100%;
+}
+#rating-box{
+    width:50%;
+}
+
+#description-box{
+    width:100%;
+    
+}
+.box{
+    width:100%; 
+}
+
+#address-box{
+    width:100%;
+
+}
+.warning{
+   color: red;
+}
+.center{
+    margin:auto; 
+    font-size: 18px;
+    color: grey;
+    width:100%; 
+    text-align: center;
+}
+
+.blue-box{
+    background-color: #BFF5FD;
+    color:#113CCF;
+    border-radius: 10px;
+    padding:10px;
+    font-family: Serif;
+}
+
+.serif{
+    font-family: Serif;
+}
+
+.icon {
+    width: 25px;
+    height: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.avg-input{
+    width: 30%; 
+}
+
+.cards{
+    width:18rem; 
+    background-color:#BFF5FD;
+    border-radius: 10px;
+}
+.card{
+    height: 100%;
+}
+.card-img-top{
+    border-radius: 10px 10px 0px 0px;
+}
+
+.welcome{
+    font-size: 25px;
+    width:80%;
+    color: #113CCF;
+    margin:auto;
+    padding:10px;
+    text-align: center;
+    background-color: #BFF5FD;
+    border-radius: 10px;
+    font-family: Serif;
+}
+
+.brown{
+    font-family: Serif;
+    color:#113CCF;
+}
+
+.highlights{
+    font-family: Serif;
+    color: #113CCF;
+} 
+
+.home{
+    font-family: Serif;
+    color:rgb(66, 66, 66)
+}
+
+.navbar{
+    background-color:#BFF5FD;
+}
+
+.description{
+    font-size: 20px;
+}
+
+.search-btn{
+    background-color: #BFF5FD;
+    color:#113CCF;
+}

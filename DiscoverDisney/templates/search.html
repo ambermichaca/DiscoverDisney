@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'search.js') }}"></script>
+
+<script>
+    let nameResults = {{nameResults|tojson}}
+    let neighborhoodResults = {{neighborhoodResults|tojson}}
+    let accesibilityResults = {{accesibilityResults|tojson}}
+    let searchString = {{searchString|tojson}}
+</script>
+
+<br><br>
+<div id="container">
+    <header>
+        <h1>Results: </h1>
+        <div class="row">
+            {{numOfResults}} results for "{{searchString}}"
+        </div>
+    </header>
+        <br><br>
+    <div role="main">
+        <h2>Found in Ride Names:</h2>
+        <div id="search-name-results-div"></div>
+        <br><br>
+
+        <h2>Found in Neighborhood:</h2>
+        <div id="search-neighborhood-results-div"></div>
+        <br><br>
+
+
+        <h2>Found in Accesibility Features:</h2>
+        <div id="search-accesibility-results-div"></div>
+    </div>
+    
+</div>
+
+
+{% endblock %}
